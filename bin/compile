@@ -9,7 +9,7 @@ CACHE_DIR=$2
 BIN_DIR=$(cd "$(dirname "$0")"; pwd) # absolute path
 
 
-TEXLIVE_REPOSITORY="http://mirror.ctan.org/systems/texlive/tlnet"
+TEXLIVE_REPOSITORY="https://packages.oth-regensburg.de/ctan/systems/texlive/tlnet/"
 
 # TODO: remove this in future versions.
 # This is only kept for backwards support
