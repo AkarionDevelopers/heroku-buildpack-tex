@@ -9,18 +9,7 @@ CACHE_DIR=$2
 BIN_DIR=$(cd "$(dirname "$0")"; pwd) # absolute path
 
 
-TEXLIVE_REPOSITORY="https://packages.oth-regensburg.de/ctan/systems/texlive/tlnet/"
-
-# TODO: remove this in future versions.
-# This is only kept for backwards support
-if [ -f "$BUILD_DIR/.texlive-repository" ]; then
-    TEXLIVE_REPOSITORY=$(cat "$BUILD_DIR/.texlive-repository")
-fi
-
-# Optional: use custom path to texlive installer
-if [ -f "$BUILD_DIR/texlive.repository" ]; then
-    TEXLIVE_REPOSITORY=$(cat "$BUILD_DIR/texlive.repository")
-fi
+TEXLIVE_REPOSITORY="http://packages.oth-regensburg.de/ctan/systems/texlive/tlnet/"
 
 TEXLIVE_INSTALLER_URL="$TEXLIVE_REPOSITORY/install-tl-unx.tar.gz"
 
