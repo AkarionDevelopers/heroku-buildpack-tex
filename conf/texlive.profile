@@ -1,4 +1,4 @@
-selected_scheme scheme-small
+selected_scheme scheme-full
 binary_x86_64-linux 1
 collection-fontutils 1
 collection-latex 1
