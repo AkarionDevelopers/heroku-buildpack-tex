@@ -1,8 +1,8 @@
-FROM heroku/heroku:16-build
+FROM heroku/heroku:18-build
 
 WORKDIR /app
 
-ENV STACK=heroku-16
+ENV STACK=heroku-18
 
 RUN mkdir -p /app /var/env /tmp/build-cache /tmp/heroku-buildpack-tex
 
